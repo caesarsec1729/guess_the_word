@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess it</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="guess" />
+        <button onclick="asd()">Check</button>
+    </form>
+    
+    <script>
+        const words = [
+            "mango",
+            "banana",
+            "apple"
+        ]
+        function asd(){
+            const g = document.getElementById("guess").value;
+            const w = words[Math.round(Math.random()*words.length)]
+            console.log(w);
+            alert(g == w ? "Correct!" : "Wrong!!!");
+        }
+    </script>
+</body>
+</html>
